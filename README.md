@@ -1,2 +1,3 @@
-# code-read-examples
-Code read examples for founders and coders.
+# Code read examples
+
+## Examples made by myself to practice in pair programming sessions 🌱

@@ -1,9 +1,9 @@
 // Problem 1 
 
 function swap(input) {
-  let splitStr = string.split(" ");
-  for (let i = 0; i < splitStr.length; i++) {
-    let splitWord = splitStr[i].split("");
+  let split = input.split(" ");
+  for (let i = 0; i < split.length; i++) {
+    let splitWord = split[i].split("");
     let firstLetter = splitWord[0];
     let lastLetter = splitWord[splitWord.length -1];
     
@@ -11,10 +11,10 @@ function swap(input) {
     splitWord[0] = lastLetter;
     splitWord[splitWord.length -1] = firstLetter;
     
-     splitStr[i] = splitWord.join('');
+     split[i] = splitWord.join('');
   }
   
-  return splitStr.join(' ')
+  return split.join(' ')
 }
 
 // console.log(swap("Miah is very tired"));

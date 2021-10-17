@@ -53,3 +53,19 @@ function transform(input) {
 }
 
 // console.log(transform("Miah is very tired"));
+
+function transform(arg1, callback) {
+  const results = [];
+  for (let i = 0; i < arg1.length; i++) {
+    if (callback(arg1[i])) {
+      results.push(arg1[i]);
+    }
+  }
+  return results;
+}
+
+function method(x) {
+   return x !== 10;
+} 
+
+console.log(transform([10, 20, 30], method));

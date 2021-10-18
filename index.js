@@ -69,3 +69,18 @@ function method(x) {
 } 
 
 console.log(transform([10, 20, 30], method));
+
+
+function transform(input, callback) {
+  let x = [];
+   input.forEach(value => {
+     callback(value)
+     if (callback(value) === true) {
+       x.push(value);
+     }
+   });
+  return x;
+}
+
+// console.log(transform([10,3,5], num => num % 5 === 0));
+

@@ -2,3 +2,4 @@
 2. The sum which accumulates of the array. 22
 3. Return string without any vowels. "mh s vry trd"
 4. Return an array without values which don't equal 10 [20, 30] 
+5. Return an array with only multiples of 5[10,5]

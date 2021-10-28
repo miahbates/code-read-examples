@@ -54,6 +54,7 @@ function transform(input) {
 
 // console.log(transform("Miah is very tired"));
 
+// Problem 4
 function transform(arg1, callback) {
   const results = [];
   for (let i = 0; i < arg1.length; i++) {
@@ -68,9 +69,9 @@ function method(x) {
    return x !== 10;
 } 
 
-console.log(transform([10, 20, 30], method));
+// console.log(transform([10, 20, 30], method));
 
-
+// Probelem 5
 function transform(input, callback) {
   let x = [];
    input.forEach(value => {
@@ -84,3 +85,14 @@ function transform(input, callback) {
 
 // console.log(transform([10,3,5], num => num % 5 === 0));
 
+// Problem 6
+
+function transform(input) {
+  let firstVariable = input.filter(x => x % 5 !== 0);
+  let secondVariable = firstVariable.map(x => x * x);
+  let thirdVariable = secondVariable.reduce((sum, x) => sum + x, 0);
+  return thirdVariable;
+ }
+
+
+// console.log(transform([10, 2, 35, 4, 5]));

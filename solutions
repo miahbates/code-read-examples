@@ -4,3 +4,4 @@
 4. Return an array without values which don't equal 10 [20, 30] 
 5. Return an array with only multiples of 5 [10,5]
 6. filter out numbers, transform array, add together transformed array. 30
+7. orders the numbered array (using first character only as sort converts into number into a string)["10-15-2-3"] - might expect ["2-3-10-15"]

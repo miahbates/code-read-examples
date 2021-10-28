@@ -96,3 +96,14 @@ function transform(input) {
 
 
 // console.log(transform([10, 2, 35, 4, 5]));
+
+// Problem 7
+
+function transform(input) {
+  let variable = input.slice().sort();
+  console.log(variable);
+  let x = variable.reduce((x, y) => x + '-' + y);
+  return x;
+}
+
+// console.log(transform([3,10,15,2]));

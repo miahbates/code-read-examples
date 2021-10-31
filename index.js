@@ -107,3 +107,12 @@ function transform(input) {
 }
 
 // console.log(transform([3,10,15,2]));
+
+// Problem 8
+
+function sortByLength(words) {
+  words.sort((a, b) => a.length - b.length);
+  return words;
+}
+
+// console.log(sortByLength(['miah', 'gus','ash', 'hi']));

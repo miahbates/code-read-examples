@@ -116,3 +116,16 @@ function sortByLength(words) {
 }
 
 // console.log(sortByLength(['miah', 'gus','ash', 'hi']));
+
+// Problem 9
+function find(arr, callback) {
+  let result = arr.findIndex(x => callback(x) === true)
+   if (result !== -1 ) {
+     return result;
+   } else {
+     return undefined;
+   }
+}
+
+// const arr = [1, 2, 6, 4];
+// console.log(find(arr, n => n > 5));

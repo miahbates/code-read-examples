@@ -6,3 +6,4 @@
 6. filter out numbers, transform array, add together transformed array. 30
 7. orders the numbered array (using first character only as sort converts into number into a string)["10-15-2-3"] - might expect ["2-3-10-15"]
 8. orders array in terms of lows length word to longest. ["hi", "gus", "ash", "miah"]
+9. return index of condition which is true. - 2.

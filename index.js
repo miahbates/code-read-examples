@@ -129,3 +129,12 @@ function find(arr, callback) {
 
 // const arr = [1, 2, 6, 4];
 // console.log(find(arr, n => n > 5));
+
+// Problem 10 
+
+function transform(input) {
+  return input.filter(e => !!e);
+}
+
+// console.log(transform([7,"foo", false, "", 0, "miah", {}, 27, [0]]));
+

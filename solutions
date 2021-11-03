@@ -8,3 +8,4 @@
 8. orders array in terms of lows length word to longest. ["hi", "gus", "ash", "miah"]
 9. return index of condition which is true. - 2.
 10. return only truthy values. [7, "foo", "miah", [object Object] { ... }, 27, [0]].
+11. reverse array of numbers. [5, 4, 3, 2, 1].

@@ -138,3 +138,17 @@ function transform(input) {
 
 // console.log(transform([7,"foo", false, "", 0, "miah", {}, 27, [0]]));
 
+// Problem 11
+
+
+function reverse(input) {
+  if (input.length <= 1) {
+    return input;
+  }
+  let ans = input.reduceRight((acc, current) => acc.concat(current), []);
+  let x = Array.from(ans);
+  let y = x.map(Number);
+return y;
+}
+
+// console.log(reverse([1, 2, 3, 4, 5]));

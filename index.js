@@ -141,7 +141,7 @@ function transform(input) {
 // Problem 11
 
 
-function reverse(input) {
+function transform(input) {
   if (input.length <= 1) {
     return input;
   }
@@ -151,4 +151,4 @@ function reverse(input) {
 return y;
 }
 
-// console.log(reverse([1, 2, 3, 4, 5]));
+// console.log(transform([1, 2, 3, 4, 5]));

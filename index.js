@@ -152,3 +152,23 @@ return y;
 }
 
 // console.log(transform([1, 2, 3, 4, 5]));
+
+// Problem 12 
+
+function alphabetPosition(text) {
+  let arr = [];
+  let string = "abcdefghijklmnopqrstuvwxyz";
+  
+  let textLower = text.toLowerCase();
+  
+  for (let i = 0; i < textLower.length; i++) {
+    let index = string.indexOf(textLower[i]);
+    if (index >= 0) {
+      arr.push(index + 1);
+    }
+   }  
+  return arr.join(" ");
+
+}
+
+// console.log(alphabetPosition("I'm learning to code"));

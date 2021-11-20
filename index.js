@@ -172,3 +172,22 @@ function alphabetPosition(text) {
 }
 
 // console.log(alphabetPosition("I'm learning to code"));
+
+// Problem 13 
+
+function transform(arg) {
+  let variable1 = [];
+  let variable2 = [];
+  for (let i = 0; i < arg.length; i++) {
+    if (arg[i] !== 4) {
+      variable1.push(arg[i]);
+    } else if (arg[i] === 4) {
+      variable2.push(arg[i]);
+    }
+  }
+  let variable3 = variable1.concat(variable2);
+  return variable3;
+}
+
+// console.log(transform([false,1,4,1,2,4,1,3,"a","b",4]));
+

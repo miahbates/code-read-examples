@@ -191,3 +191,16 @@ function transform(arg) {
 
 // console.log(transform([false,1,4,1,2,4,1,3,"a","b",4]));
 
+// Problem 14
+function types(inputs) {
+  return inputs.map(a => typeof a);
+}
+
+// console.log(types([
+//   'foo',
+//   [],
+//   undefined,
+//   null,
+//   40,
+//   NaN
+// ]));

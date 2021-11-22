@@ -204,3 +204,15 @@ function types(inputs) {
 //   40,
 //   NaN
 // ]));
+
+// Problem 15 
+
+function transform(arg){
+  let variable = arg.split(" ");
+  for (let i = 1; i < variable.length; i+=2) {
+      variable[i] = variable[i].split("").reverse().join("");
+    }
+  return variable.join(" ").trim();
+}
+
+// console.log(transform('Miah is very tired and needs to go to sleep'));

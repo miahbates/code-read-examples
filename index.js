@@ -225,4 +225,11 @@ function transform(arg) {
   return parseInt(variable2.join(""));
 }
 
+// or 
+
+const transform = (arg) => parseInt(
+  arg.toString().split("").reduce((acc, item) => acc + '' + item * item , "")
+);
+
 // console.log(transform(9119));
+

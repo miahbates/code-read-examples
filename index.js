@@ -216,3 +216,13 @@ function transform(arg){
 }
 
 // console.log(transform('Miah is very tired and needs to go to sleep'));
+
+// Problem 16
+
+function transform(arg) {
+  let variable1 = arg.toString().split("");
+  let variable2 = variable1.map((element) => element * element );
+  return parseInt(variable2.join(""));
+}
+
+// console.log(transform(9119));

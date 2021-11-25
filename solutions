@@ -14,3 +14,6 @@
 14. return types. ["string", "object", "undefined", "object", "number", "number"]
 15. Reverse every other word in the string. "Miah si very derit and sdeen to og to peels"
 16. square each number. 811181
+17. setting time on a clock. "16:00:00"
+"16:0:0"
+"17:0:0"

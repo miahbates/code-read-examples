@@ -233,3 +233,29 @@ const transform = (arg) => parseInt(
 
 // console.log(transform(9119));
 
+// Problem 17 
+
+const clock = {
+  hours: 12,
+  minutes: 10,
+  seconds: 2,
+  get time() { return `${this.hours}:${this.minutes}:${this.seconds}`},
+  set time(input) { 
+    let split = input.split(":");
+    this.hours = parseInt(split[0]);
+    this.minutes = parseInt(split[1]);
+    this.seconds = parseInt(split[2]);
+  },
+  get madrid() { return`${this.hours + 1}:${this.minutes}:${this.seconds}` },  
+  
+}
+
+// set 
+// console.log(clock.time = "16:00:00");
+
+// //get 
+// console.log(clock.time);
+
+// // get madrid 
+// console.log(clock.madrid);
+

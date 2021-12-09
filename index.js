@@ -259,3 +259,30 @@ const clock = {
 // // get madrid 
 // console.log(clock.madrid);
 
+// Problem 18
+
+function transform(input) {
+  let variable1 = input.split("");
+  let newArr = []
+  let variable2 = variable1.filter(element => element !== 'o')
+  let reversedArr = variable2.reverse();
+  let finalAns = [];
+   for (let i = 0; i < variable2.length; i+=2) {
+     finalAns.push(variable2[i]);
+   }
+   return finalAns.join("");
+  }
+  
+  // console.log(transform("ooooo!xo!roatoooyxoooiwohooo"))
+
+  // Problem 19 
+
+  function transform(x) {
+    const [one, two, three, four, five="!"] = x.split('');
+    return `${four+two+five}`;
+  }
+  
+  // console.log(transform('miah'));
+  
+
+

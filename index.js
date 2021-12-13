@@ -283,6 +283,21 @@ function transform(input) {
   }
   
   // console.log(transform('miah'));
+
+  // Problem 20 
+
+  function transform(input) {
+    let thing = -Infinity;
+    for (let i = 1; i < input.length; i++) {
+      thing = Math.max(input[i] * input[i -1], thing);
+    }
+    return thing; 
+};
+
+
+// console.log(transform([4, 12, 3, 1, 5])); 
+
+
   
 
 

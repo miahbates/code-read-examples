@@ -297,6 +297,16 @@ function transform(input) {
 
 // console.log(transform([4, 12, 3, 1, 5])); 
 
+// Problem 21
+
+function transform(x, y) {
+  var ans  = x/(y*y);
+  return ans < 18.5 ? "Underweight" : ans <=25 ? "Normal" : ans <= 30 ? "Overweight" : "Obese";
+}
+
+// console.log(transform(80, 1.80));
+
+
 
   
 

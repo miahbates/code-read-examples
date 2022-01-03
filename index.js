@@ -316,7 +316,22 @@ function hero(bullets, dragons){
   }
 }
 
-console.log(hero(10, 5));
+// console.log(hero(10, 5));
+
+// Problem 23 
+
+function transform(input) {
+  let total = 100;
+  for (let i = input.length -2; i >= 0; i -= 2) {
+    let a = input[i];
+    total /= a;
+    total += 10;
+  }
+  return total;
+  
+}
+
+// console.log(transform([1,10,4,3,15,3,5,2]));
 
 
 

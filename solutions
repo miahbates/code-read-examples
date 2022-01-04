@@ -22,4 +22,5 @@
 20. Highest multiplication of two adjacent numbers. 48
 21. Work out bmi and return a string. 'Normal'
 22. Will hero survive. True
-23. 23 
+23.  23 
+24. template literals - times interpolated values by three. "Times this number 6 and that number 12 by three"

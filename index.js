@@ -333,6 +333,23 @@ function transform(input) {
 
 // console.log(transform([1,10,4,3,15,3,5,2]));
 
+// Problem 24 
+
+function transform(strings, ...values) {
+  // console.log({strings: strings, values: values});
+  let result = '';
+    strings.forEach((item, index) => {
+      // console.log(item);
+      result += item;
+        if ( index < values.length) {
+          result += (3 * values[index].toString())
+        }
+    })
+  return result;
+}
+                             
+console.log(transform`Times this number ${2} and that number ${4} by three`);
+
 
 
   

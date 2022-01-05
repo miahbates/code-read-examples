@@ -350,8 +350,59 @@ function transform(strings, ...values) {
                              
 console.log(transform`Times this number ${2} and that number ${4} by three`);
 
+// Probelem 25 
 
-
+class Spud {
+  constructor(name, breed) {
+    this.name = name;
+    this.breed = breed;
+  }
   
+  get uppercaseName() {
+    return this.name.toUpperCase();
+  }
+  
+  get canWoof() {
+    if (this.breed === 'dog') {
+      return true;
+    }
+    return false;
+  }
+  
+  set canWoof(canWoof) {
+    if (canWoof === true) {
+      this.breed = 'dog';
+    } else {
+      this.breed = 'human';
+    }
+  }
+  
+ makeLowerCase(upperCaseName) {
+   this.name = upperCaseName.toLowerCase();
+ }
+ 
+}
+
+const m = new Spud('miah', 'human');
+
+// console.log(m);
+
+m.name = 'steve';
+
+// console.log(m);
+
+// console.log(m.uppercaseName);
+
+// console.log(m);
+
+m.makeLowerCase('ASH');
+
+console.log(m);
+
+// m.name to be 'ash'
+
+
+// console.log(m.uppercaseName());
+
 
 
